@@ -4,6 +4,7 @@ metadata:
   name: nginx
   labels:
     app: nginx
+  namespace: adrian
 spec:
   replicas: 1
   selector:
@@ -19,14 +20,10 @@ spec:
         image: nginx:latest
         ports:
         - containerPort: 80
-        readinessProbe:
-          tcpSocket:
-            port: 8080
-          initialDelaySeconds: 3
-          periodSeconds: 2
-        livenessProbe:
-          httpGet:
-            path: /somepath
-            port: 80
-          initialDelaySeconds: 3
-          periodSeconds: 2
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "100m"
+          limits:
+            memory: "512Mi"
+            cpu: "100m"

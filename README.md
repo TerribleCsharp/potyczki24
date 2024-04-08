@@ -1,3 +1,6 @@
+# [link do dokumentacji](https://docs.google.com/document/d/1Fo5mYimBCUjWKQtOflV8y_mwla2CsUV65_PXKuR2owE/edit?usp=sharing)
+(zespół trzeci)
+   
 # Witamy w finale!
 Potyczki Młodych Adminów 2024
 
